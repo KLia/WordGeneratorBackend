@@ -1,0 +1,10 @@
+Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!chain.py
+!words.py
+!text_generator.py
+!text_generator_localtest.py
+
