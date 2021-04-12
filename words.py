@@ -18,7 +18,7 @@ class Words(object):
 
         for line in corpus.split('\n'):
             '''remove punctuation and lowercase everything'''
-            line = re.sub(ur"\p{P}+", "", line).lower()
+            line = re.sub(ur"[\p{P}\p{L}<>¿¡]+", "", line.decode('utf-8')).lower()
 
             for word in line.split():
                 corpus_list += [list(word)]
